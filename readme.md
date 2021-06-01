@@ -26,6 +26,10 @@ Note:
 The name length of the music is fixed at 20 excluding authors' name 
 The music time range is fixed less than 7 min.
 
+I uses google.com to make the category searches, youtube to collect the data to be downloaded and https://youtubetomp3music.com/ to convert youtube to mp3
+
 # Preview
+
+![](previews/preview.gif)
 
 
