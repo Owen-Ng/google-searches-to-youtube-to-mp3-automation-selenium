@@ -7,11 +7,8 @@ def main():
 
 def exec():
     exec = Youtubetomp3()
-    exec.makeTheSearch("[Your Song]")
+    exec.makeTheSearch("christian music")
     names = exec.getNames()
-    # 'Break Every Chain',
-    # names = ['Yes I Will', 'New Wine',
-    #          'Worthy Is The Lamb', 'Lead Me to the Cross', 'No One But You', 'Good Grace', 'Here I Am to Worship/Call', 'God, You’re So Good', 'Behold (Then Sings My Soul)', 'Run To The Father']
 
     for i in names:
         results = exec.goToYoutubeAndSearch(i)

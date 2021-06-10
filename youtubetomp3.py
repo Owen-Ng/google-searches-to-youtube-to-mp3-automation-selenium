@@ -13,6 +13,8 @@ import sys
 class Youtubetomp3(Download):
     def execute(self, data):
         self.gotowebsite()
+        if data == None:
+            return
         for d in data:
             self.search(d['link'])
             self.conversion()

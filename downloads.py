@@ -15,6 +15,7 @@ class Download(namesCollections):
     def goToYoutubeAndSearch(self, search):
         self.searchresult = search
         self.driver.get("https://youtube.com")
+        time.sleep(1)
         self.Search(search)
         time.sleep(1)
 
@@ -61,7 +62,7 @@ class Download(namesCollections):
                     link = ls[-2]
                     # print(timestamp[1][0], title.lower(), self.search in title.lower(), len(
                     #     timestamp), timestamp, end="\n")
-                    if counter > 10:
+                    if counter > 30:
                         print(counter, 2)
                         break
                     if len(timestamp) <= 2 and self.searchresult.lower() in title.lower() and int(timestamp[0].split(" ")[0]) <= 6:
